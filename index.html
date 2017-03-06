@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sudoku</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .line {
+            display: flex;
+        }
+        
+        .box {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #333;
+        }
+        
+        .box.single {
+            background: #f2f2f2;
+        }
+        
+        .box.double {
+            background: #ccc;
+        }
+        
+        .result {
+            font-size: 40px;
+            line-height: 60px;
+            text-align: center;
+        }
+        
+        .highlight {
+            background: #cc0000!important;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+    <div class="btns">
+        <button id="J_Start">开始</button>
+        <button id="J_Fill">填充默认数据</button>
+        <button id="J_Possibility">计算可能性</button>
+        <button id="J_Along">计算唯一性</button>
+    </div>
+    <script src="./dist/commons.js"></script>
+    <script src="./dist/main.bundle.js"></script>
+    <script>
+        // 简单
+        // boxes[0].setValue(8);
+        // boxes[10].setValue(3);
+        // boxes[11].setValue(7);
+        // boxes[20].setValue(1);
+
+        // boxes[3].setValue(9);
+        // boxes[4].setValue(7);
+        // boxes[5].setValue(4);
+        // boxes[12].setValue(8);
+        // boxes[13].setValue(5);
+        // boxes[14].setValue(1);
+        // boxes[22].setValue(2);
+        // boxes[23].setValue(6);
+
+        // boxes[16].setValue(9);
+        // boxes[26].setValue(4);
+
+        // boxes[27].setValue(6);
+        // boxes[28].setValue(7);
+        // boxes[38].setValue(4);
+        // boxes[45].setValue(3);
+        // boxes[47].setValue(2);
+
+        // boxes[49].setValue(1);
+
+        // boxes[34].setValue(5);
+        // boxes[35].setValue(1);
+        // boxes[42].setValue(9);
+        // boxes[44].setValue(8);
+        // boxes[53].setValue(6);
+
+
+        // boxes[54].setValue(2);
+        // boxes[55].setValue(9);
+        // boxes[63].setValue(1);
+        // boxes[65].setValue(8);
+
+
+        // boxes[58].setValue(4);
+        // boxes[59].setValue(7);
+        // boxes[66].setValue(6);
+        // boxes[68].setValue(5);
+        // boxes[75].setValue(2);
+        // boxes[77].setValue(3);
+
+
+        // boxes[62].setValue(5);
+        // boxes[69].setValue(3);
+        // boxes[70].setValue(2);
+    </script>
+    <script>
+        // 困难
+        // boxes[2].setValue(7);
+        // boxes[3].setValue(8);
+        // boxes[4].setValue(1);
+        // boxes[6].setValue(5);
+
+        // boxes[9].setValue(3);
+        // boxes[16].setValue(2);
+
+        // boxes[18].setValue(5);
+        // boxes[19].setValue(1);
+        // boxes[26].setValue(3);
+
+        // boxes[27].setValue(8);
+        // boxes[28].setValue(5);
+        // boxes[29].setValue(3);
+        // boxes[30].setValue(2);
+        // boxes[32].setValue(1);
+        // boxes[35].setValue(7);
+
+        // boxes[37].setValue(7);
+        // boxes[39].setValue(3);
+        // boxes[43].setValue(5);
+
+        // boxes[46].setValue(9);
+        // boxes[49].setValue(8);
+
+        // boxes[55].setValue(4);
+        // boxes[56].setValue(8);
+        // boxes[57].setValue(9);
+        // boxes[60].setValue(1);
+        // boxes[62].setValue(2);
+
+        // boxes[63].setValue(9);
+        // boxes[64].setValue(3);
+        // boxes[65].setValue(2);
+    </script>
+</body>
+
+</html>
